@@ -1,3 +1,28 @@
+## Description
+
+Terraform manifest deploys VM in the yandex-cloud and provisions Nginx with ansible playbook
+
+## Usage
+
+Clone git repository
+```
+git clone https://github.com/mishasun/otus-homework01.git
+```
+Copy and edit `terraform.tfvars` with your credentials
+```
+cd otus-homework01
+cp ./terraform.tfvars.example ./terraform.tfvars
+vi ./terraform.tfvars
+```
+Apply terraform manifest
+```
+terraform init
+terraform apply
+```
+
+
+Command `./terraform-docs markdown . > README.md` genenerates next document from Terraform
+
 ## Requirements
 
 No requirements.
